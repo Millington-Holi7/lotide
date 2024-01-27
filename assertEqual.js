@@ -3,12 +3,13 @@ const assertEqual = function (actual, expected) {
     console.log("💚💚💚 Assertion Passed: " + actual + " === " + expected);
   } else {
     console.log("🛑🛑🛑 Assertion Failed: " + actual + " !== " + expected);
+    // cleaner code - console.log("emoji Assertion Passed: ${actual} === ${expected}"); //
   }
 };
-
+assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual("Bootcamp", "Bootcamp");
 assertEqual(1, 150);
-
+assertEqual(1, 1);
 
 
 
