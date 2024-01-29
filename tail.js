@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -6,13 +6,13 @@ const assertEqual = function (actual, expected) {
 
   }
 };
-const tail = function (words) {
+const tail = function(words) {
   if (words.length > 0) {
-    return words.slice(1)
+    return words.slice(1);
   } else {
     return [];
   }
-}
+};
 
 const result = tail(["Hello", "Lighthouse", "labs"]);
 assertEqual(result.length, 2);
