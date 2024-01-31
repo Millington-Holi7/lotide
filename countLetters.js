@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`💚💚💚 Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -7,22 +7,28 @@ const assertEqual = function (actual, expected) {
 };
 //take in a sentence as a string
 // retrun a count of each letter as an object
-const countLetters = function (sentence) {
+const countLetters = function(sentence) {
   const count = {};
-  for (const value of sentence) {
-    if (count[value]) {
-      count[value] += 1;
-    } else {
-      count[value] = 1;
+  for (const key of sentence) {
+    if (key !== " ") {
+      if (count[key]) {
+
+        count[key] += 1;
+      } else {
+        count[key] = 1;
+      }
     }
   }
   return count;
 };
-console.log(countLetters('hether'));
+console.log(countLetters('love heather'));
 
-let result = countLetters('hether');
+let result = countLetters('love heather');
+assertEqual(result['l'], 1);
+assertEqual(result['o'], 1);
+assertEqual(result['v'], 1);
 assertEqual(result['h'], 2);
-assertEqual(result['e'], 2);
+assertEqual(result['e'], 3);
 assertEqual(result['r'], 1);
 assertEqual(result['t'], 1);
 
