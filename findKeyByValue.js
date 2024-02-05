@@ -3,9 +3,9 @@ const assertEqual = function (actual, expected) {
     console.log(`💚💚💚 Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-
   }
 };
+
 // take in an object and the value that we need to find
 //scan the object for the value that matches
 // if no match found, return undefined.
