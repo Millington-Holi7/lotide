@@ -14,6 +14,13 @@ describe("#middle", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
   });
 
+  it("make sure the original array was not altered by the middle function", () => {
+    const words = ["hello", "world", "lighthouse"];
+    const originalLength = words.length;
+    middle(words);
+    assert.strictEqual(words.length, originalLength);
+  });
+
 });
 
 
