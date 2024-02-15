@@ -14,7 +14,8 @@ const findKeyByValue = require('./findKeyByValue');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 const eqObjects = require('./eqObjects');
-
+const assertEqual = require('./assertEqual');
+const assertObjectsEqual = require('./assertObjectsEqual');
 
 module.exports = {
   head:   head,
@@ -31,6 +32,8 @@ module.exports = {
   findKeyByValue: findKeyByValue,
   takeUntil: takeUntil,
   without: without,
-  eqObjects: eqObjects
+  eqObjects: eqObjects,
+  assertEqual: assertEqual,
+  assertObjectsEqual: assertObjectsEqual
 
 };
