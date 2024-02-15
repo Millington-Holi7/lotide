@@ -1,6 +1,6 @@
 // index.js
-const head   = require('./head');
-const tail   = require('./tail');
+const head = require('./head');
+const tail = require('./tail');
 const middle = require('./middle');
 const assertArraysEqual = require("./assertArraysEqual");
 const eqArrays = require('./eqArrays');
@@ -18,22 +18,22 @@ const assertEqual = require('./assertEqual');
 const assertObjectsEqual = require('./assertObjectsEqual');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  eqArrays: eqArrays,
-  map: map,
-  flatten: flatten,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  letterPositions: letterPositions,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  takeUntil: takeUntil,
-  without: without,
-  eqObjects: eqObjects,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual
+  head,
+  tail,
+  middle,
+  assertArraysEqual,
+  eqArrays,
+  map,
+  flatten,
+  countLetters,
+  countOnly,
+  letterPositions,
+  findKey,
+  findKeyByValue,
+  takeUntil,
+  without,
+  eqObjects,
+  assertEqual,
+  assertObjectsEqual
 
 };
