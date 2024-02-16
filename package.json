@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "name": "@holinamillington/lotide",
+  "version": "1.0.1",
+  "description": "lighthouse labs",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Millington-Holi7/lotide.git"
   },
-  "author": "",
+  "author": "Holina Millington",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Millington-Holi7/lotide/issues"
